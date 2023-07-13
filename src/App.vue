@@ -1,9 +1,15 @@
 <script>
 
+import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
+
 export default{
   name:"App",
   components:{
-
+     HeaderComponent ,
+     MainComponent ,
+     FooterComponent
   },
   data(){
     return{
@@ -17,18 +23,13 @@ export default{
 </script>
 
 <template>
-  <header>
-    HEADER
-  </header>
 
-  <main>
-    MAIN
-    <p>Francesco di Corpo</p>
-  </main>
+<HeaderComponent />
 
-  <footer>
-    FOOTER
-  </footer>
+<MainComponent />
+
+<FooterComponent />
+
 
 </template>
 
